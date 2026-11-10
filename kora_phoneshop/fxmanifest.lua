@@ -12,3 +12,6 @@ files {
 data_file 'DLC_ITYP_REQUEST' 'stream/phoneshop.ytyp'
 -- audio occlusion (build/audio_occlusion.py): stream/-91252583.ymt (+ unsigned-name copy). The dat151 room audio
 -- (reverb/room tone) crashed the b3889 client on load (c0000005), so it is left out until rebuilt.
+
+-- kora_qa: Gherkin test scenarios (converted legacy tests), see [kora]/kora_qa/README.md
+qa_feature 'tests/*.feature'
