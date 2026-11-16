@@ -1,0 +1,47 @@
+name: Feature request
+description: Suggest an improvement to -default-maps-.
+title: '[Feature]: '
+body:
+  - type: markdown
+    attributes:
+      value: >-
+        Search existing issues first and report one problem at a time. Remove passwords, tokens,
+        connection strings and player identifiers from text and attachments. For a suspected
+        vulnerability, use the repository Security tab or its security policy instead of a public
+        issue.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What would you like to do?
+      description: Describe the problem or workflow in -default-maps- that you want to improve.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: How should it work?
+      description: Describe the result you would like. A concrete example helps.
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Which part is affected?
+      options:
+        - Map streaming
+        - Collision and placement
+        - Textures
+        - Map conflicts
+        - Other / not sure
+  - type: textarea
+    id: context
+    attributes:
+      label: Resource details (optional)
+      description: >-
+        Name the map/resource, coordinates and game build. Include overlapping MLO/IPL resources and
+        whether collision, textures or placement failed.
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives or examples (optional)
+      description: Mention a workaround, another approach, or an image/link that explains the idea.
